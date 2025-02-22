@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: 58fb4890795734346b96849454d4593f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4625298048961775792
+    second: slimemove_0
+  - first:
+      213: -6421086603532721116
+    second: slimemove_1
+  - first:
+      213: 3764877339610499888
+    second: slimemove_2
+  - first:
+      213: -1807271519802566846
+    second: slimemove_3
+  - first:
+      213: 1979122174397667802
+    second: slimemove_4
+  - first:
+      213: 4294907301265598976
+    second: slimemove_5
+  - first:
+      213: -7477932326323628677
+    second: slimemove_6
+  - first:
+      213: -1937046765351247539
+    second: slimemove_7
+  - first:
+      213: -5145477734667922613
+    second: slimemove_8
+  - first:
+      213: -7243619631137372952
+    second: slimemove_9
+  - first:
+      213: 1936890740396544037
+    second: slimemove_10
+  - first:
+      213: -7246288582836402738
+    second: slimemove_11
+  - first:
+      213: -6085366619929140854
+    second: slimemove_12
+  - first:
+      213: 4486602826398783397
+    second: slimemove_13
+  - first:
+      213: -3438047581876722879
+    second: slimemove_14
+  - first:
+      213: -957297763460865721
+    second: slimemove_15
+  - first:
+      213: -4891589024480359137
+    second: slimemove_16
+  - first:
+      213: -4680205657456308511
+    second: slimemove_17
+  - first:
+      213: 1310755189881133069
+    second: slimemove_18
+  - first:
+      213: -5746930065955575026
+    second: slimemove_19
+  - first:
+      213: -7453048600681013940
+    second: slimemove_20
+  - first:
+      213: 7205421807422130213
+    second: slimemove_21
+  - first:
+      213: 7153236675958373321
+    second: slimemove_22
+  - first:
+      213: -3584105220728193816
+    second: slimemove_23
+  - first:
+      213: -1383878481675749005
+    second: slimemove_24
+  - first:
+      213: 8232287317934957227
+    second: slimemove_25
+  - first:
+      213: -4065057016776673550
+    second: slimemove_26
+  - first:
+      213: 3293536539788008521
+    second: slimemove_27
+  - first:
+      213: 3750840410505698202
+    second: slimemove_28
+  - first:
+      213: -884099026557563769
+    second: slimemove_29
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slimemove_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 698
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057735b2ee3afcfb0800000000000000
+      internalID: -4625298048961775792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      slimemove_0: -4625298048961775792
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
