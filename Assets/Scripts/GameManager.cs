@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     public Transform targetPoint;
     public float arrowSpeed = 5f;
     public List<ArrowData> arrowDatas = new List<ArrowData>();
+    public TMP_Text notification;
 
     private List<Arrow> arrows = new List<Arrow>();
     private List<KeyCode> arrowKeys;
@@ -24,7 +26,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        MoveArrows();
         CheckInput();
     }
 
@@ -32,7 +33,7 @@ public class GameManager : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(0.5f, 2.5f));
+            yield return new WaitForSeconds(Random.Range(0.25f, 1f));
             SpawnArrow();
         }
     }
@@ -41,18 +42,8 @@ public class GameManager : MonoBehaviour
     {
         Arrow newArrow = Instantiate(arrowPrefab, spawnPoint.position, Quaternion.identity, arrowCanvas).GetComponent<Arrow>();
         newArrow.SetData(arrowDatas[Random.Range(0, arrowDatas.Count)]);
+        newArrow.MoveDirection = (targetPoint.position - spawnPoint.position).normalized;
         arrows.Add(newArrow);
-    }
-
-    void MoveArrows()
-    {
-        for (int i = 0; i < arrows.Count; i++)
-        {
-            if (arrows[i] != null)
-            {
-                arrows[i].transform.position = Vector3.MoveTowards(arrows[i].transform.position, targetPoint.position, arrowSpeed * Time.deltaTime);
-            }
-        }
     }
 
     void CheckInput()
@@ -68,19 +59,26 @@ public class GameManager : MonoBehaviour
 
     void CheckHit(KeyCode key)
     {
-        for (var i = 0; i < arrows.Count; i++)
+        var firstArrow = arrows.First();
+        if (firstArrow.myData.KeyCode == key)
         {
-            if (arrows[i].myData.KeyCode == key)
+            float distance = Vector3.Distance(firstArrow.transform.position, targetPoint.position);
+            var notificationText = "miss";
+            if (distance < 0.25f)
             {
-                float distance = Vector3.Distance(arrows[i].transform.position, targetPoint.position);
-                if (distance < 0.5f)
-                {
-                    Destroy(arrows[i].gameObject);
-                    arrows.RemoveAt(i);
-                    Debug.Log("Perfect Hit!");
-                    break;
-                }
+                notificationText = "perfect";
             }
+            else if (distance < 0.5f)
+            {
+                notificationText = "great";
+            }
+            else if (distance < 0.75f)
+            {
+                notificationText = "good";
+            }
+            Destroy(firstArrow.gameObject);
+            arrows.Remove(firstArrow);
+            notification.text = notificationText;
         }
     }
 }
